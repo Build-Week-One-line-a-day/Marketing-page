@@ -1,0 +1,72 @@
+//importing all less files
+@import "variable.less";
+@import "reset.less";
+@import "mixins.less";
+
+body {
+    background: @primaryred;
+
+    #signUpButton{
+        .buttondesign();
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+
+    .onelinemain {
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+
+        .mainimage {
+            width: 40%;
+        }
+        
+        img{
+            width: 90%;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        .main{
+            width: 40%;
+            text-align: center;
+
+            h1{
+                font-family: @mainfont;
+                color: @accentyellow2;
+                font-size: 4rem;
+                margin-left: 1.5rem;
+            }
+
+            p {
+                font-family: @secondaryfont;
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                color: white;
+            }
+        }
+    }
+.buttonDiv{
+    text-align:center;
+    margin-top:1.5rem;
+    #writeButton {
+         .writeButton();
+    }
+}   
+    
+
+    
+}
+
+.buttonClass {
+    display:flex;
+    justify-content:flex-end;
+}
+
+span {
+    font-size:7rem;
+    color: @accentblue;
+}
