@@ -127,9 +127,66 @@ table {
   border-spacing: 0;
 }
 body {
-  background: #ba2545;
+  background-color: #4b5a69;
 }
-body #signUpButton {
+.separation {
+  width: 80%;
+  margin: 0 auto;
+}
+.separation img {
+  padding-left: 60px;
+}
+.quickfeatures {
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 5rem;
+}
+.quickfeatures h1 {
+  font-size: 4rem;
+  color: #47cbe6;
+  font-family: 'Amatic SC', cursive;
+}
+.quickfeatures p {
+  font-size: 1.5rem;
+  font-family: 'Poiret One', cursive;
+  color: #edc71c;
+}
+.quickfeatures .icon img {
+  width: 125px;
+  height: auto;
+}
+.quickfeatures .timefeature {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.quickfeatures .timeabout {
+  text-align: center;
+  width: 60%;
+}
+.quickfeatures .progressfeature {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.quickfeatures .progressabout {
+  text-align: center;
+}
+.quickfeatures .memoryfeature {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.quickfeatures .memoryabout {
+  text-align: center;
+}
+.testClass {
+  background: #ba2545;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-bottom-left-radius: 55rem;
+  border-bottom-right-radius: 55rem;
+}
+.testClass #signUpButton {
   color: white;
   padding: 5px 5px;
   width: 6rem;
@@ -178,6 +235,7 @@ body #signUpButton {
 .container .buttonDiv {
   text-align: center;
   margin-top: 1.5rem;
+  padding-bottom: 5rem;
 }
 .container .buttonDiv #writeButton {
   color: #4b5a69;

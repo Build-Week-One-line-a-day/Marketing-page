@@ -4,8 +4,79 @@
 @import "mixins.less";
 
 body {
-    background: @primaryred;
+    background-color:@accentgray;
+}
 
+.separation{
+    width: 80%;
+    margin: 0 auto;
+    img{
+        padding-left: 60px;
+    }
+}
+
+.quickfeatures {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 5rem;
+
+    h1{
+        font-size: 4rem;
+        color: @accentblue;
+        font-family: @mainfont;
+
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-family: @secondaryfont;
+        color: @accentyellow;
+    }
+
+    .icon img{
+        width: 125px;
+        height: auto;
+    }
+
+    .timefeature{
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+
+    .timeabout {
+        text-align: center;
+        width: 60%;
+    }
+
+    .progressfeature{
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+
+    .progressabout {
+        text-align: center;
+    }
+
+    .memoryfeature{
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+
+    .memoryabout {
+        text-align: center;
+    }
+
+
+}
+
+.testClass {
+    background: @primaryred;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-bottom-left-radius:55rem;
+    border-bottom-right-radius:55rem;
     #signUpButton{
         .buttondesign();
     }
@@ -52,13 +123,12 @@ body {
 .buttonDiv{
     text-align:center;
     margin-top:1.5rem;
+    padding-bottom:5rem;
     #writeButton {
          .writeButton();
     }
 }   
-    
-
-    
+   
 }
 
 .buttonClass {
