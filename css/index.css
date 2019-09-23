@@ -180,6 +180,64 @@ body {
 .quickfeatures .memoryabout {
   text-align: center;
 }
+footer {
+  background-color: #ba2545;
+  background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
+  background-position: center;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
+footer .links .containerDiv {
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .links .listClass {
+  display: flex;
+  justify-content: center;
+}
+footer .links li button {
+  color: #4b5a69;
+  padding: 5px 5px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #edc71c 0%, #47cbe6 31%, #47cbe6 60%, #ebbd36 100%);
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #47cbe6;
+  font-family: 'Amatic SC', cursive;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+footer .links .firstImg {
+  width: 12rem;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 5rem;
+  padding: 2rem;
+}
+footer .iconDiv {
+  border: 1px solid white;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+footer .iconDiv ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+footer .iconDiv img {
+  width: 50px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 .testClass {
   background: #ba2545;
   background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
