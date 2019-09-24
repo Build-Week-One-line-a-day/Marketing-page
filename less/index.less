@@ -5,15 +5,16 @@
 
 body {
     background-color:@accentgray;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
 }
 
-.separation{
-    width: 80%;
-    margin: 0 auto;
-    img{
-        padding-left: 60px;
-    }
-}
+// .separation{
+//     width: 80%;
+//     margin: 0 auto;
+//     img{
+//         padding-left: 60px;
+//     }
+// }
 
 
 
@@ -21,6 +22,9 @@ body {
     margin: 0 auto;
     width: 60%;
     margin-top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 
     h1{
         font-size: 4rem;
@@ -35,39 +39,17 @@ body {
         color: @accentyellow;
     }
 
-    .icon img{
+    img{
         width: 125px;
         height: auto;
+        padding-right: 50px;
     }
 
-    .timefeature{
-        display:flex;
-        justify-content: space-around;
+    .featurebox{
+        display: flex;
+        width: 90%;
         margin-bottom: 3rem;
-    }
-
-    .timeabout {
-        text-align: center;
-        width: 60%;
-    }
-
-    .progressfeature{
-        display:flex;
-        justify-content: space-around;
-        margin-bottom: 3rem;
-    }
-
-    .progressabout {
-        text-align: center;
-    }
-
-    .memoryfeature{
-        display:flex;
-        justify-content: space-around;
-        margin-bottom: 3rem;
-    }
-
-    .memoryabout {
+        align-content: center;
         text-align: center;
     }
 
@@ -77,31 +59,24 @@ footer{
     background-color: @primaryred;
     background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
     background-position: center;
-
-    // .containerDiv {
-    //     border:2px solid white;
-    //     display:flex;
-    //     height:15rem;
-    //     flex-wrap:wrap;
-    // }
+    border-top-left-radius:40rem;
+    border-top-right-radius:40rem;
 
     .links {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        border: 1px solid black;
 
         .containerDiv {
-        border:2px solid yellow;
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        margin: 0 auto;
+        width: 45%;
     }
 
         .listClass{
             display:flex;
-            justify-content: center;
-            // margin-left:13.7rem;
+            justify-content: flex-start;
         }
 
         li button{
@@ -111,28 +86,24 @@ footer{
             width: 12rem;
             height: auto;
             justify-content:flex-start;
-            margin-left:5rem;
+            margin-left:16rem;
             padding: 2rem;
         }
     }
 
     .iconDiv {
 
-        border: 1px solid white;
         display: flex;
         align-content: center;
-        justify-content:flex-end;
+        justify-content:flex-start;
+        padding: 2rem 0rem 0rem 1rem;
         
-        ul {
-            display:flex;
-            align-content:center;
-            justify-content: center;
-        }
             img {
                 width:50px;
                 height:auto;
+                padding-right: 2rem;
                 display:flex;
-                justify-content:center;
+                justify-content:flex-start;
             }
     }
 }
@@ -142,9 +113,6 @@ footer{
     background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
     border-bottom-left-radius:55rem;
     border-bottom-right-radius:55rem;
-    #signUpButton{
-        .buttondesign();
-    }
 }
 
 .container {
@@ -185,20 +153,30 @@ footer{
             }
         }
     }
-.buttonDiv{
+    .buttonDiv{
     text-align:center;
     margin-top:1.5rem;
     padding-bottom:5rem;
     #writeButton {
-         .writeButton();
+        .writeButton(@accentgray, linear-gradient(to right, @accentyellow 0%, @accentblue 31%, @accentblue 60%, @accentyellow2 100%));
     }
+    #writeButton:hover {
+        .writeButton(white, linear-gradient(to right, @accentblue 0%, @accentyellow 31%, @accentyellow2 60%, @accentblue 100%));
+    }
+}
 }   
    
-}
+
 
 .buttonClass {
     display:flex;
     justify-content:flex-end;
+    #signUpButton, #logInButton{
+            .buttondesign(white, linear-gradient(to right, @accentyellow 0%, @accentorange 51%, @accentyellow2 100%));
+    }
+    #signUpButton:hover, #logInButton:hover{
+        .buttondesign(black, linear-gradient(to right, @accentblue 0%, @accentyellow 51%, @accentblue 100%));
+    }
 }
 
 span {
