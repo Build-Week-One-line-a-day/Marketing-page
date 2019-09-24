@@ -126,6 +126,104 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.aboutContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.aboutHead {
+  background: #cf0732;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-bottom-left-radius: 55rem;
+  border-bottom-right-radius: 55rem;
+  border-bottom: 2px solid #47cbe6;
+}
+.aboutHead h1 {
+  color: #ebbd36;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+}
+.teamMembers {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.teamMembers .team {
+  background-color: #ebbd36;
+  margin-top: 3rem;
+}
+.teamMembers .team h2 {
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  background: #cf0732;
+}
+footer {
+  background-color: #cf0732;
+  background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
+  background-position: center;
+  border-top-left-radius: 40rem;
+  border-top-right-radius: 40rem;
+  border-top: 2px solid #edc71c;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .links .containerDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 45%;
+}
+footer .links button {
+  color: white;
+  padding: 5px 5px;
+  background-image: linear-gradient(to right, #edc71c 0%, #47cbe6 31%, #47cbe6 60%, #ebbd36 100%);
+  border-radius: 10px;
+  text-align: center;
+  border: 0px;
+  font-family: 'Amatic SC', cursive;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+footer .links button:hover {
+  color: black;
+  padding: 5px 5px;
+  background-image: linear-gradient(to right, #47cbe6 0%, #ebbd36 31%, #edc71c 60%, #47cbe6 100%);
+  border-radius: 10px;
+  text-align: center;
+  border: 0px;
+  font-family: 'Amatic SC', cursive;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+footer .links .firstImg {
+  width: 12rem;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 16rem;
+  padding: 2rem;
+}
+footer .iconDiv {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 2rem 0rem 0rem 1rem;
+}
+footer .iconDiv img {
+  width: 50px;
+  height: auto;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
 body {
   background-color: #4b5a69;
   background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
@@ -160,66 +258,12 @@ body {
   align-content: center;
   text-align: center;
 }
-footer {
-  background-color: #cf0732;
-  background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
-  background-position: center;
-  border-top-left-radius: 40rem;
-  border-top-right-radius: 40rem;
-}
-footer .links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-footer .links .containerDiv {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 45%;
-}
-footer .links .listClass {
-  display: flex;
-  justify-content: flex-start;
-}
-footer .links li button {
-  color: #4b5a69;
-  padding: 5px 5px;
-  font-weight: bold;
-  background-image: linear-gradient(to right, #edc71c 0%, #47cbe6 31%, #47cbe6 60%, #ebbd36 100%);
-  border-radius: 10px;
-  text-align: center;
-  border: 1px solid #47cbe6;
-  font-family: 'Amatic SC', cursive;
-  cursor: pointer;
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-footer .links .firstImg {
-  width: 12rem;
-  height: auto;
-  justify-content: flex-start;
-  margin-left: 16rem;
-  padding: 2rem;
-}
-footer .iconDiv {
-  display: flex;
-  align-content: center;
-  justify-content: flex-start;
-  padding: 2rem 0rem 0rem 1rem;
-}
-footer .iconDiv img {
-  width: 50px;
-  height: auto;
-  padding-right: 2rem;
-  display: flex;
-  justify-content: flex-start;
-}
 .testClass {
   background: #cf0732;
   background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
   border-bottom-left-radius: 55rem;
   border-bottom-right-radius: 55rem;
+  border-bottom: 2px solid #edc71c;
 }
 .container {
   margin: 0 auto;

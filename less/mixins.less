@@ -26,14 +26,13 @@
     margin:.5rem;
 }
 
-.navButton() {
-    color:@accentgray;
+.navButton(@color, @background-image ) {
+    color:@color;
     padding: 5px 5px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, @accentyellow 0%, @accentblue 31%, @accentblue 60%, @accentyellow2 100%);
+    background-image: @background-image;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid @accentblue;
+    border: 0px;
     font-family: @mainfont;
     cursor: pointer;
     font-size:2rem;

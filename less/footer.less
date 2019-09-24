@@ -1,0 +1,54 @@
+
+
+footer{
+    background-color: @primaryred;
+    background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
+    background-position: center;
+    border-top-left-radius:40rem;
+    border-top-right-radius:40rem;
+    border-top: 2px solid @accentyellow;
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .containerDiv {
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 45%;
+    }
+
+        button{
+            .navButton(white, linear-gradient(to right, @accentyellow 0%, @accentblue 31%, @accentblue 60%, @accentyellow2 100%));
+        }
+
+        button:hover{
+            .navButton(black, linear-gradient(to right, @accentblue 0%, @accentyellow2 31%, @accentyellow 60%, @accentblue 100%));
+        }
+        .firstImg {
+            width: 12rem;
+            height: auto;
+            justify-content:flex-start;
+            margin-left:16rem;
+            padding: 2rem;
+        }
+    }
+
+    .iconDiv {
+
+        display: flex;
+        align-content: center;
+        justify-content:flex-start;
+        padding: 2rem 0rem 0rem 1rem;
+        
+        img {
+            width:50px;
+            height:auto;
+            padding-right: 2rem;
+            display:flex;
+            justify-content:flex-start;
+        }   
+    }
+}
