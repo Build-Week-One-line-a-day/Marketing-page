@@ -1,0 +1,185 @@
+//importing all less files
+@import "variable.less";
+@import "reset.less";
+@import "mixins.less";
+
+body {
+    background-color:@accentgray;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
+}
+
+// .separation{
+//     width: 80%;
+//     margin: 0 auto;
+//     img{
+//         padding-left: 60px;
+//     }
+// }
+
+
+
+.quickfeatures {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    h1{
+        font-size: 4rem;
+        color: @accentblue;
+        font-family: @mainfont;
+
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-family: @secondaryfont;
+        color: @accentyellow;
+    }
+
+    img{
+        width: 125px;
+        height: auto;
+        padding-right: 50px;
+    }
+
+    .featurebox{
+        display: flex;
+        width: 90%;
+        margin-bottom: 3rem;
+        align-content: center;
+        text-align: center;
+    }
+
+
+}
+footer{
+    background-color: @primaryred;
+    background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
+    background-position: center;
+    border-top-left-radius:40rem;
+    border-top-right-radius:40rem;
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .containerDiv {
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 45%;
+    }
+
+        .listClass{
+            display:flex;
+            justify-content: flex-start;
+        }
+
+        li button{
+            .navButton();
+        }
+        .firstImg {
+            width: 12rem;
+            height: auto;
+            justify-content:flex-start;
+            margin-left:16rem;
+            padding: 2rem;
+        }
+    }
+
+    .iconDiv {
+
+        display: flex;
+        align-content: center;
+        justify-content:flex-start;
+        padding: 2rem 0rem 0rem 1rem;
+        
+            img {
+                width:50px;
+                height:auto;
+                padding-right: 2rem;
+                display:flex;
+                justify-content:flex-start;
+            }
+    }
+}
+
+.testClass {
+    background: @primaryred;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-bottom-left-radius:55rem;
+    border-bottom-right-radius:55rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+
+    .onelinemain {
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+
+        .mainimage {
+            width: 40%;
+        }
+        
+        img{
+            width: 90%;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        .main{
+            width: 40%;
+            text-align: center;
+
+            h1{
+                font-family: @mainfont;
+                color: @accentyellow2;
+                font-size: 4rem;
+                margin-left: 1.5rem;
+            }
+
+            p {
+                font-family: @secondaryfont;
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                color: white;
+            }
+        }
+    }
+    .buttonDiv{
+    text-align:center;
+    margin-top:1.5rem;
+    padding-bottom:5rem;
+    #writeButton {
+        .writeButton(@accentgray, linear-gradient(to right, @accentyellow 0%, @accentblue 31%, @accentblue 60%, @accentyellow2 100%));
+    }
+    #writeButton:hover {
+        .writeButton(white, linear-gradient(to right, @accentblue 0%, @accentyellow 31%, @accentyellow2 60%, @accentblue 100%));
+    }
+}
+}   
+   
+
+
+.buttonClass {
+    display:flex;
+    justify-content:flex-end;
+    #signUpButton, #logInButton{
+            .buttondesign(white, linear-gradient(to right, @accentyellow 0%, @accentorange 51%, @accentyellow2 100%));
+    }
+    #signUpButton:hover, #logInButton:hover{
+        .buttondesign(black, linear-gradient(to right, @accentblue 0%, @accentyellow 51%, @accentblue 100%));
+    }
+}
+
+span {
+    font-size:7rem;
+    color: @accentblue;
+}
