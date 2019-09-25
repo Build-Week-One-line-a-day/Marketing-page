@@ -2,23 +2,23 @@
 @import "variable.less";
 @import "reset.less";
 @import "mixins.less";
+@import "about.less";
+@import "footer.less";
+
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color:@accentgray;
     background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
 }
 
-// .separation{
-//     width: 80%;
-//     margin: 0 auto;
-//     img{
-//         padding-left: 60px;
-//     }
-// }
-
-
-
-.quickfeatures {
+.container{
+    width: 99%;
+    margin: 0 auto;
+}
+#quickfeatures {
     margin: 0 auto;
     width: 60%;
     margin-top: 5rem;
@@ -26,85 +26,59 @@ body {
     justify-content: flex-end;
     flex-direction: column;
 
+    @media @phone{
+        width: 80%;
+        margin-top: 2rem;
+    }
+
     h1{
         font-size: 4rem;
         color: @accentblue;
         font-family: @mainfont;
-
+        @media @tablet {
+            font-size: 3rem;
+        }
+        @media @phone {
+            font-size: 2rem;
+        }
     }
 
     p{
         font-size: 1.5rem;
         font-family: @secondaryfont;
         color: @accentyellow;
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+        @media @phone{
+            font-size: 1rem;
+        }
     }
 
-    img{
-        width: 125px;
-        height: auto;
-        padding-right: 50px;
-    }
-
-    .featurebox{
+    .featureBox{
         display: flex;
         width: 90%;
         margin-bottom: 3rem;
         align-content: center;
         text-align: center;
-    }
 
-
-}
-footer{
-    background-color: @primaryred;
-    background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
-    background-position: center;
-    border-top-left-radius:40rem;
-    border-top-right-radius:40rem;
-
-    .links {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-
-        .containerDiv {
-        display:flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 45%;
-    }
-
-        .listClass{
-            display:flex;
-            justify-content: flex-start;
-        }
-
-        li button{
-            .navButton();
-        }
-        .firstImg {
-            width: 12rem;
+        img{
+            width: 125px;
             height: auto;
-            justify-content:flex-start;
-            margin-left:16rem;
-            padding: 2rem;
-        }
-    }
-
-    .iconDiv {
-
-        display: flex;
-        align-content: center;
-        justify-content:flex-start;
-        padding: 2rem 0rem 0rem 1rem;
-        
-            img {
-                width:50px;
-                height:auto;
-                padding-right: 2rem;
-                display:flex;
-                justify-content:flex-start;
+            padding-right: 50px;
+    
+            @media @tablet {
+                width: 75px;
+                height:75px;
             }
+
+            @media @phone{
+                width: 60px;
+                height: 60px;
+                padding-right: 20px;
+            }
+            
+        }
     }
 }
 
@@ -113,16 +87,30 @@ footer{
     background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
     border-bottom-left-radius:55rem;
     border-bottom-right-radius:55rem;
+    border-bottom: 2px solid @accentyellow;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
-.container {
+
+
+.topSection {
     margin: 0 auto;
     width: 80%;
 
-    .onelinemain {
+    .oneLineMain {
         display: flex;
         margin-top: 8rem;
         justify-content: center;
+
+        @media @phone {
+            margin-top:0;
+            padding-top:1.5rem;
+            flex-direction:column;
+        }
 
         .mainimage {
             width: 40%;
@@ -132,38 +120,78 @@ footer{
             width: 90%;
             height: auto;
             margin-top: 1rem;
+
+            @media @phone {
+                width:250%;
+            }
         }
 
         .main{
             width: 40%;
             text-align: center;
+            @media @phone {
+                width:80%;
+                margin:0 auto;
+                margin-top:1.5rem;
+            }
 
             h1{
                 font-family: @mainfont;
                 color: @accentyellow2;
                 font-size: 4rem;
                 margin-left: 1.5rem;
+
+                @media @phone {
+                    font-size:3rem;
+                }
             }
 
             p {
                 font-family: @secondaryfont;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 margin-top: 2rem;
                 color: white;
             }
+
+            span {
+                font-size:1.8em;
+                color: @accentblue;
+            }
+
         }
     }
     .buttonDiv{
     text-align:center;
     margin-top:1.5rem;
     padding-bottom:5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: @accentgray;
+    }
+    a:hover{
+        color:black;
+    }
     #writeButton {
+        width: 40%;
         .writeButton(@accentgray, linear-gradient(to right, @accentyellow 0%, @accentblue 31%, @accentblue 60%, @accentyellow2 100%));
+        @media @phone{
+            width: 70%;
+            font-size:2rem;
+        }
     }
     #writeButton:hover {
-        .writeButton(white, linear-gradient(to right, @accentblue 0%, @accentyellow 31%, @accentyellow2 60%, @accentblue 100%));
+        width: 40%;
+        @media @phone {
+            width: 70%;
+            font-size:2rem;
+        }
+        .writeButton(black, linear-gradient(to right, @accentblue 0%, @accentyellow 31%, @accentyellow2 60%, @accentblue 100%));
+        @media @phone{
+            width: 70%;
+        }
     }
-}
 }   
    
 
@@ -171,15 +199,14 @@ footer{
 .buttonClass {
     display:flex;
     justify-content:flex-end;
-    #signUpButton, #logInButton{
+    @media @phone{
+        border:2px solid yellow;
+        display:none;
+    }
+    #learnMore, #aboutUs{
             .buttondesign(white, linear-gradient(to right, @accentyellow 0%, @accentorange 51%, @accentyellow2 100%));
     }
-    #signUpButton:hover, #logInButton:hover{
-        .buttondesign(black, linear-gradient(to right, @accentblue 0%, @accentyellow 51%, @accentblue 100%));
+    #learnMore:hover, #aboutUs:hover{
+        .buttondesign(white, linear-gradient(to right, @accentblue 0%, @accentyellow 51%, @accentblue 100%));
     }
-}
-
-span {
-    font-size:7rem;
-    color: @accentblue;
 }

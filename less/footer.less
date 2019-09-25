@@ -1,0 +1,97 @@
+
+
+footer{
+    background-color: @primaryred;
+    background-image: url(https://www.transparenttextures.com/patterns/notebook.png);
+    background-position: center;
+    border-top-left-radius:40rem;
+    border-top-right-radius:40rem;
+    border-top: 2px solid @accentyellow;
+    width: 90%;
+    margin: 0 auto;
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .footerDiv {
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 45%;
+
+        @media @tablet {
+            margin:0;
+
+        }
+    }
+
+        button{
+            .navButton(white, linear-gradient(to right, @accentyellow 0%, @accentblue 31%, @accentblue 60%, @accentyellow2 100%));
+            @media @phone {
+                width:50%;
+                font-size:1.3rem;
+                color:black;
+                margin-left:1rem;
+                margin-top:1rem;
+            }
+        }
+
+        button:hover{
+            .navButton(white, linear-gradient(to right, @accentblue 0%, @accentyellow2 31%, @accentyellow 60%, @accentblue 100%));
+            @media @phone {
+                width:50%;
+                font-size:1.3rem;
+                color:black;
+                margin-left:1rem;
+                margin-top:1rem;
+            }
+        }
+        .firstImg {
+            width: 20%;
+            height: auto;
+            // justify-content:flex-start;
+            margin-left:10rem;
+            padding: 2rem;
+
+            @media @tablet {
+                margin-left:2.5rem;
+            }
+            @media @phone {
+                padding:0 .5rem 1rem 1.5rem;
+            }
+        }
+    }
+
+    .iconDiv {
+
+        display: flex;
+        align-content: center;
+        justify-content:center;
+        width: 35%;
+        padding: 2rem 0rem 0rem 2rem;
+
+        @media @tablet {
+            //border:1px solid white;
+            width:80%;
+        }
+
+        @media @phone {
+            padding: 1rem 0rem 1rem 1rem;
+        }
+        
+        img {
+            width:40px;
+            height:auto;
+            padding-right: 2rem;
+            display:flex;
+            justify-content:flex-start;
+
+            @media @phone {
+                width:25px;
+                padding-right:3rem;
+            }
+        }   
+    }
+}
