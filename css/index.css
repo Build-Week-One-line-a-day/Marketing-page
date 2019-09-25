@@ -201,10 +201,10 @@ footer .links button {
 }
 @media (max-width: 500px) {
   footer .links button {
-    width: 50%;
-    font-size: 1.3rem;
+    width: 60%;
+    font-size: 1rem;
     color: black;
-    margin-left: 1rem;
+    margin-left: 1.1rem;
     margin-top: 1rem;
   }
 }
@@ -222,8 +222,8 @@ footer .links button:hover {
 }
 @media (max-width: 500px) {
   footer .links button:hover {
-    width: 50%;
-    font-size: 1.3rem;
+    width: 60%;
+    font-size: 1.1rem;
     color: black;
     margin-left: 1rem;
     margin-top: 1rem;
