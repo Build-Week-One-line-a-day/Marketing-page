@@ -169,7 +169,7 @@ table {
   color: #47cbe6;
 }
 .aboutHead h1 {
-  color: #ebbd36;
+  color: #edc71c;
   text-align: center;
   padding: 2rem 0 1rem 0;
   font-family: 'Amatic SC', cursive;
@@ -186,6 +186,7 @@ table {
   font-family: 'Poiret One', cursive;
   color: white;
   font-size: 2rem;
+  text-align: center;
 }
 .role {
   display: flex;
@@ -198,6 +199,11 @@ table {
   margin-top: 2rem;
   border: 1px solid #ebbd36;
 }
+@media (max-width: 500px) {
+  .role {
+    width: 75%;
+  }
+}
 .role h2 {
   font-size: 2.5rem;
   padding: 1.5rem 0 1.5rem 0;
@@ -209,14 +215,30 @@ table {
   width: 80%;
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 1.5rem;
+}
+@media (max-width: 500px) {
+  .roleMembers {
+    flex-direction: column;
+  }
 }
 .roleMembers .m {
   display: flex;
   width: 40%;
+  justify-content: space-around;
   flex-direction: column;
-  padding-right: 2rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .roleMembers .m {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .roleMembers .m {
+    width: 90%;
+  }
 }
 .roleMembers .m .icons {
   display: flex;
@@ -236,7 +258,7 @@ table {
   border: 0px;
 }
 .roleMembers img {
-  width: 300px;
+  width: 15rem;
   height: auto;
   margin: 0 auto;
   border-radius: 50%;
@@ -280,7 +302,7 @@ table {
   justify-content: center;
 }
 .homeLogoFooter img {
-  width: 50px;
+  width: 40px;
   height: auto;
 }
 .homeLogoFooter a {
@@ -296,6 +318,11 @@ table {
   align-self: center;
   font-weight: bold;
   font-family: 'Amatic SC', cursive;
+}
+@media (max-width: 500px) {
+  .homeLogoFooter p {
+    font-size: 1rem;
+  }
 }
 .homeLogoFooter p:hover {
   color: #47cbe6;
@@ -404,6 +431,7 @@ footer .iconDiv {
 footer .iconDiv img {
   width: 40px;
   height: auto;
+  padding-top: 1rem;
   padding-right: 2rem;
   display: flex;
   justify-content: flex-start;
