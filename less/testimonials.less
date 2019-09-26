@@ -1,3 +1,8 @@
+.sectionClass {
+    width:100%;
+    margin:0 auto;
+}
+
 .containerClass {
     font-family:@mainfont;
     color:white;
@@ -5,9 +10,6 @@
     text-align:center;
     margin:1em 0em 1em 0em;
 
-    @media @phone {
-        border:2px solid white;
-    }
 }
 
 .headerClass {
@@ -66,6 +68,10 @@
     flex-wrap:wrap;
     margin:0 auto;
     margin-bottom:4em;
+
+    @media @tablet {
+        width:90%;
+    }
 
     @media @phone {
         display:flex;
@@ -239,8 +245,9 @@
 
     @media @tablet {
         border-bottom-left-radius:50rem;
-        width:45rem;
-        margin-left:1rem;
+        width:70%;
+        margin:0 auto;
+        margin-top:2rem;;
     }
 
     @media @phone {

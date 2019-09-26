@@ -442,17 +442,16 @@ footer .iconDiv img {
     padding-right: 3rem;
   }
 }
+.sectionClass {
+  width: 100%;
+  margin: 0 auto;
+}
 .containerClass {
   font-family: 'Amatic SC', cursive;
   color: white;
   font-size: 2em;
   text-align: center;
   margin: 1em 0em 1em 0em;
-}
-@media (max-width: 500px) {
-  .containerClass {
-    border: 2px solid white;
-  }
 }
 .headerClass {
   background: #cf0732;
@@ -505,6 +504,11 @@ footer .iconDiv img {
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 4em;
+}
+@media (max-width: 768px) {
+  .testimonialsClass {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .testimonialsClass {
@@ -668,8 +672,9 @@ footer .iconDiv img {
 @media (max-width: 768px) {
   .boxClass {
     border-bottom-left-radius: 50rem;
-    width: 45rem;
-    margin-left: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 500px) {
