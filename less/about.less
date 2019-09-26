@@ -13,8 +13,40 @@
     border-bottom-right-radius:55rem;
     border-bottom: 2px solid @accentblue;
 
+    .homeLogo {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        img{
+            width: 50px;
+            height: auto;
+            text-align: center;
+        }
+        a{
+            align-self: center;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        p{
+            color: rgb(78, 78, 78);
+            font-size: 1.5rem;
+            align-self: center;
+            font-weight: bold;
+            font-family: @mainfont;
+        }
+        p:hover{
+            color: @accentblue;
+        }
+
+    }
+
     h1 {
-        color: @accentyellow2;
+        color: @accentyellow;
         text-align: center;
         padding: 2rem 0 1rem 0;
         font-family: @mainfont;
@@ -22,20 +54,169 @@
     }
 }
 
-.teamMembers{
+.description{
     display: flex;
     width: 80%;
     margin: 0 auto;
+    padding: 2rem;
+    justify-content: center;
 
-    .team{
-        background-color: @accentyellow2;
-        margin-top: 3rem;
-
-        h2{
-            font-size: 1.5rem;
-            font-family: @mainfont;
-            text-align: center;
-            background: @primaryred;
-        }
+    h3{
+        font-family: @secondaryfont;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
     }
 }
+
+.role{
+    display: flex;
+    justify-content: center;
+    background: @primaryred;
+    border-radius: 20rem;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid @accentyellow2;
+
+    @media @phone{
+        width: 75%;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        padding: 1.5rem 0 1.5rem 0;
+        font-family: @mainfont;
+        color: @accentyellow;
+        text-align: center;
+    }
+}
+
+.roleMembers{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+    @media @phone{
+        flex-direction: column;
+    }
+    .m{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 0 auto;
+
+        @media @tablet{
+            width: 95%;
+        }
+
+        @media @phone{
+            width: 90%;
+        }
+
+        .icons{
+            display:flex;
+            background: @accentblue;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            // margin: 0 auto;
+
+            a{
+                justify-content: center;
+            }
+
+
+            img{
+                width: 50px;
+                padding: .2rem;
+                height: auto;
+                border: 0px;
+
+
+            }
+        }
+
+    }
+
+    img{
+        width: 15rem;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    h4{
+        font-size: 2.2rem;
+        font-family: @mainfont;
+        color: @accentyellow;
+        margin-top: .2rem;
+        text-align: center;
+        border: 1px solid black;
+        background: @primaryred;
+        border-radius: 10px;
+    }
+    p{
+        font-family: @secondaryfont;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        padding: .5rem;
+        color: black;
+        border: 1px solid black;
+        background: @accentyellow2;
+    }
+}
+
+.aboutfooter{
+    background: @primaryred;
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-top-left-radius:70rem;
+    border-top-right-radius:70rem;
+    border-top: 2px solid @accentblue;
+}
+
+.homeLogoFooter {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 40px;
+        height: auto;
+    }
+    a{
+        align-self: center;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    p{
+        color: rgb(78, 78, 78);
+        font-size: 1.5rem;
+        align-self: center;
+        font-weight: bold;
+        font-family: @mainfont;
+
+        @media @phone{
+            font-size: 1rem;
+        }
+    }
+    p:hover{
+        color: @accentblue;
+    }
+
+}
+

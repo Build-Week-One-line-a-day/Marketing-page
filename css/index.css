@@ -139,27 +139,193 @@ table {
   border-bottom-right-radius: 55rem;
   border-bottom: 2px solid #47cbe6;
 }
+.aboutHead .homeLogo {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.aboutHead .homeLogo img {
+  width: 50px;
+  height: auto;
+  text-align: center;
+}
+.aboutHead .homeLogo a {
+  align-self: center;
+  text-decoration: none;
+}
+.aboutHead .homeLogo a:hover {
+  color: white;
+}
+.aboutHead .homeLogo p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.aboutHead .homeLogo p:hover {
+  color: #47cbe6;
+}
 .aboutHead h1 {
-  color: #ebbd36;
+  color: #edc71c;
   text-align: center;
   padding: 2rem 0 1rem 0;
   font-family: 'Amatic SC', cursive;
   font-size: 4rem;
 }
-.teamMembers {
+.description {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
 }
-.teamMembers .team {
-  background-color: #ebbd36;
-  margin-top: 3rem;
-}
-.teamMembers .team h2 {
-  font-size: 1.5rem;
-  font-family: 'Amatic SC', cursive;
+.description h3 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 2rem;
   text-align: center;
+}
+.role {
+  display: flex;
+  justify-content: center;
   background: #cf0732;
+  border-radius: 20rem;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: 1px solid #ebbd36;
+}
+@media (max-width: 500px) {
+  .role {
+    width: 75%;
+  }
+}
+.role h2 {
+  font-size: 2.5rem;
+  padding: 1.5rem 0 1.5rem 0;
+  font-family: 'Amatic SC', cursive;
+  color: #edc71c;
+  text-align: center;
+}
+.roleMembers {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+@media (max-width: 500px) {
+  .roleMembers {
+    flex-direction: column;
+  }
+}
+.roleMembers .m {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .roleMembers .m {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .roleMembers .m {
+    width: 90%;
+  }
+}
+.roleMembers .m .icons {
+  display: flex;
+  background: #47cbe6;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+.roleMembers .m .icons a {
+  justify-content: center;
+}
+.roleMembers .m .icons img {
+  width: 50px;
+  padding: 0.2rem;
+  height: auto;
+  border: 0px;
+}
+.roleMembers img {
+  width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.roleMembers h4 {
+  font-size: 2.2rem;
+  font-family: 'Amatic SC', cursive;
+  color: #edc71c;
+  margin-top: 0.2rem;
+  text-align: center;
+  border: 1px solid black;
+  background: #cf0732;
+  border-radius: 10px;
+}
+.roleMembers p {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: black;
+  border: 1px solid black;
+  background: #ebbd36;
+}
+.aboutfooter {
+  background: #cf0732;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-top-left-radius: 70rem;
+  border-top-right-radius: 70rem;
+  border-top: 2px solid #47cbe6;
+}
+.homeLogoFooter {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.homeLogoFooter img {
+  width: 40px;
+  height: auto;
+}
+.homeLogoFooter a {
+  align-self: center;
+  text-decoration: none;
+}
+.homeLogoFooter a:hover {
+  color: white;
+}
+.homeLogoFooter p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+@media (max-width: 500px) {
+  .homeLogoFooter p {
+    font-size: 1rem;
+  }
+}
+.homeLogoFooter p:hover {
+  color: #47cbe6;
 }
 footer {
   background-color: #cf0732;
@@ -265,6 +431,7 @@ footer .iconDiv {
 footer .iconDiv img {
   width: 40px;
   height: auto;
+  padding-top: 1rem;
   padding-right: 2rem;
   display: flex;
   justify-content: flex-start;
@@ -274,6 +441,308 @@ footer .iconDiv img {
     width: 25px;
     padding-right: 3rem;
   }
+}
+.sectionClass {
+  width: 100%;
+  margin: 0 auto;
+}
+.containerClass {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin: 1em 0em 1em 0em;
+}
+.headerClass {
+  background: #cf0732;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-bottom-left-radius: 55rem;
+  border-bottom-right-radius: 55rem;
+  border-bottom: 2px solid #47cbe6;
+}
+.headerClass .homeLogo {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.headerClass .homeLogo img {
+  width: 50px;
+  height: auto;
+  text-align: center;
+}
+.headerClass .homeLogo a {
+  align-self: center;
+  text-decoration: none;
+}
+.headerClass .homeLogo a:hover {
+  color: white;
+}
+.headerClass .homeLogo p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.headerClass .homeLogo p:hover {
+  color: #47cbe6;
+}
+.headerClass h1 {
+  color: #ebbd36;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+}
+.testimonialsClass {
+  display: flex;
+  width: 60em;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+@media (max-width: 768px) {
+  .testimonialsClass {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .testimonialsClass {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+.imageClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 6rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 500px) {
+  .imageClass {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .imageClass {
+    display: none;
+  }
+}
+.imageClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid yellow;
+}
+.photoClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 29.3rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (max-width: 500px) {
+  .photoClass {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .photoClass {
+    display: none;
+  }
+}
+.photoClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #47cbe6;
+}
+.pictureClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 26rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 500px) {
+  .pictureClass {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .pictureClass {
+    display: none;
+  }
+}
+.pictureClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #47cbe6;
+}
+.imgClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 29.3rem;
+  margin-top: 26rem;
+}
+@media (max-width: 500px) {
+  .imgClass {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .imgClass {
+    display: none;
+  }
+}
+.imgClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid yellow;
+}
+.lastPicture {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 29rem;
+  margin-top: 41rem;
+}
+@media (max-width: 500px) {
+  .lastPicture {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .lastPicture {
+    display: none;
+  }
+}
+.lastPicture img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #47cbe6;
+}
+.picClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 41rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 500px) {
+  .picClass {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .picClass {
+    display: none;
+  }
+}
+.picClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid yellow;
+}
+.boxClass {
+  box-sizing: content-box;
+  border: 2px solid yellow;
+  width: 20em;
+  height: 10rem;
+  margin: 2.5em;
+  background: #cf0732;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 65rem;
+  border-bottom: 2px solid #47cbe6;
+  border-top-left-radius: 60rem;
+  border-top-right-radius: 55rem;
+  border-top: 2px solid #47cbe6;
+  margin-left: 6em;
+}
+@media (max-width: 768px) {
+  .boxClass {
+    border-bottom-left-radius: 50rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .boxClass {
+    border-bottom-left-radius: 50rem;
+    width: 26rem;
+    margin-left: 2rem;
+  }
+}
+.boxClass p {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+@media (max-width: 768px) {
+  .boxClass p {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+@media (max-width: 500px) {
+  .boxClass p {
+    font-size: 1.4rem;
+  }
+}
+.boxClass p span {
+  color: #edc71c;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+.footer {
+  background: #cf0732;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-top-left-radius: 70rem;
+  border-top-right-radius: 70rem;
+  border-top: 2px solid #47cbe6;
+}
+.homeLogoFooter {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.homeLogoFooter img {
+  width: 50px;
+  height: auto;
+}
+.homeLogoFooter a {
+  align-self: center;
+  text-decoration: none;
+}
+.homeLogoFooter a:hover {
+  color: white;
+}
+.homeLogoFooter p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.homeLogoFooter p:hover {
+  color: #47cbe6;
 }
 html {
   scroll-behavior: smooth;
