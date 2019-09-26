@@ -1,0 +1,326 @@
+.sectionClass {
+    width:100%;
+    margin:0 auto;
+}
+
+.containerClass {
+    font-family:@mainfont;
+    color:white;
+    font-size:2em;
+    text-align:center;
+    margin:1em 0em 1em 0em;
+
+}
+
+.headerClass {
+    background: @primaryred;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-bottom-left-radius:55rem;
+    border-bottom-right-radius:55rem;
+    border-bottom: 2px solid @accentblue;
+
+    .homeLogo {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        img{
+            width: 50px;
+            height: auto;
+            text-align: center;
+        }
+        a{
+            align-self: center;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        p{
+            color: rgb(78, 78, 78);
+            font-size: 1.5rem;
+            align-self: center;
+            font-weight: bold;
+            font-family: @mainfont;
+        }
+        p:hover{
+            color: @accentblue;
+        }
+
+    }
+
+    h1 {
+        color: @accentyellow2;
+        text-align: center;
+        padding: 2rem 0 1rem 0;
+        font-family: @mainfont;
+        font-size: 4rem;
+    }
+}
+
+.testimonialsClass {
+    display:flex;
+    width:60em;
+    flex-wrap:wrap;
+    margin:0 auto;
+    margin-bottom:4em;
+
+    @media @tablet {
+        width:90%;
+    }
+
+    @media @phone {
+        display:flex;
+        flex-wrap:nowrap;
+        flex-direction:column;
+    }
+}
+
+.imageClass {
+    //border:3px solid red;
+    position:absolute;
+    width:10rem;
+    height:10rem;
+    display:flex;
+    flex-direction:column-reverse;
+    margin-top:6rem;
+    margin-left:.5rem;
+
+    @media @phone {
+        display:none;
+    }
+
+    @media @tablet {
+        display:none;
+    }
+
+    img {
+        width:5rem;
+        border-radius:3rem;
+        border:2px solid yellow;
+    }
+}
+
+.photoClass {
+    //border:3px solid red;
+    position:absolute;
+    width:10rem;
+    height:10rem;
+    margin-left:29.3rem;
+    margin-top:6rem;
+    display:flex;
+    flex-direction:column-reverse;
+
+    @media @phone {
+        display:none;
+    }
+
+    @media @tablet {
+        display:none;
+    }
+
+    img {
+        width:5rem;
+        border-radius:3rem;
+        border:2px solid @accentblue;
+    }
+
+}
+
+.pictureClass {
+    //border:3px solid red;
+    position:absolute;
+    width:10rem;
+    height:10rem;
+    margin-top:26rem;
+    margin-left:.5rem;
+
+    @media @phone {
+        display:none;
+    }
+
+    @media @tablet {
+        display:none;
+    }
+
+    img {
+        width:5rem;
+        border-radius:3rem;
+        border:2px solid @accentblue;
+    }
+
+}
+
+.imgClass {
+     //border:3px solid red;
+     position:absolute;
+     width:10rem;
+     height:10rem;
+     margin-left:29.3rem;
+     margin-top:26rem;
+
+     @media @phone {
+        display:none;
+    }
+
+    @media @tablet {
+        display:none;
+    }
+
+     img {
+         width:5rem;
+         border-radius:3rem;
+         border:2px solid yellow;
+     }
+    
+}
+
+.lastPicture {
+    //border:3px solid red;
+    position:absolute;
+    width:10rem;
+    height:10rem;
+    margin-left:29rem;
+    margin-top:41rem;
+
+    @media @phone {
+        display:none;
+    }
+
+    @media @tablet {
+        display:none;
+    }
+
+    img {
+        width:5rem;
+        border-radius:3rem;
+        border:2px solid @accentblue;
+    }
+
+}
+
+.picClass {
+    //border:3px solid red;
+    position:absolute;
+    width:10rem;
+    height:10rem;
+    margin-top:41rem;
+    margin-left:.5rem;
+
+    @media @phone {
+        display:none;
+    }
+
+    @media @tablet {
+        display:none;
+    }
+
+    img {
+        width:5rem;
+        border-radius:3rem;
+        border:2px solid yellow;
+    }
+
+}
+
+.boxClass {
+    box-sizing:content-box;
+    border:2px solid yellow;
+    width:20em;
+    height:10rem;
+    margin:2.5em;
+    background:@primaryred;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-bottom-left-radius:3rem;
+    border-bottom-right-radius:65rem;
+    border-bottom: 2px solid @accentblue;
+    border-top-left-radius:60rem;
+    border-top-right-radius:55rem;
+    border-top: 2px solid @accentblue;
+    margin-left:6em;
+
+    @media @tablet {
+        border-bottom-left-radius:50rem;
+        width:70%;
+        margin:0 auto;
+        margin-top:2rem;;
+    }
+
+    @media @phone {
+        border-bottom-left-radius:50rem;
+        width:26rem;
+        margin-left:2rem;
+    }
+
+
+    p {
+        font-family:@mainfont;
+        color:white;
+        font-size:1rem;
+        text-align:center;
+        padding-top:1rem;
+
+        @media @tablet {
+            font-size:1.5rem;
+            color:white;
+        }
+
+        @media @phone {
+            font-size:1.4rem;
+        }
+
+        
+        
+
+        span {
+            color:@accentyellow;
+            font-family:@secondaryfont;
+            font-weight:bold;
+        }
+    }
+
+}
+
+.footer{
+    background: @primaryred;
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-top-left-radius:70rem;
+    border-top-right-radius:70rem;
+    border-top: 2px solid @accentblue;
+}
+.homeLogoFooter {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 50px;
+        height: auto;
+    }
+    a{
+        align-self: center;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    p{
+        color: rgb(78, 78, 78);
+        font-size: 1.5rem;
+        align-self: center;
+        font-weight: bold;
+        font-family: @mainfont;
+    }
+    p:hover{
+        color: @accentblue;
+    }
+
+}
