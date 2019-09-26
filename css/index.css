@@ -458,6 +458,35 @@ footer .iconDiv img {
   border-bottom-right-radius: 55rem;
   border-bottom: 2px solid #47cbe6;
 }
+.headerClass .homeLogo {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.headerClass .homeLogo img {
+  width: 50px;
+  height: auto;
+  text-align: center;
+}
+.headerClass .homeLogo a {
+  align-self: center;
+  text-decoration: none;
+}
+.headerClass .homeLogo a:hover {
+  color: white;
+}
+.headerClass .homeLogo p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.headerClass .homeLogo p:hover {
+  color: #47cbe6;
+}
 .headerClass h1 {
   color: #ebbd36;
   text-align: center;
@@ -468,16 +497,92 @@ footer .iconDiv img {
 .testimonialsClass {
   display: flex;
   justify-content: reverse;
-  border: 1px solid white;
   width: 60em;
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 4em;
 }
+.imageClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 6rem;
+  margin-left: 0.5rem;
+}
+.imageClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid yellow;
+}
+.photoClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 29.3rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.photoClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #47cbe6;
+}
+.pictureClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 26rem;
+  margin-left: 0.5rem;
+}
+.pictureClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #47cbe6;
+}
+.imgClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 29.3rem;
+  margin-top: 26rem;
+}
+.imgClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid yellow;
+}
+.lastPicture {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 29rem;
+  margin-top: 41rem;
+}
+.lastPicture img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #47cbe6;
+}
+.picClass {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 41rem;
+  margin-left: 0.5rem;
+}
+.picClass img {
+  width: 5rem;
+  border-radius: 3rem;
+  border: 2px solid yellow;
+}
 .boxClass {
+  box-sizing: content-box;
   border: 2px solid yellow;
   width: 20em;
-  height: auto;
+  height: 10rem;
   margin: 2.5em;
   background: #cf0732;
   background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
@@ -488,13 +593,18 @@ footer .iconDiv img {
   border-top-right-radius: 55rem;
   border-top: 2px solid #47cbe6;
   margin-left: 6em;
-  line-height: 20px;
 }
 .boxClass p {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Amatic SC', cursive;
   color: white;
-  width: 20em;
-  height: auto;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.boxClass p span {
+  color: #edc71c;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
 }
 .footer {
   background: #cf0732;
