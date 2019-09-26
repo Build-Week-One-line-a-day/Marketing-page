@@ -1,5 +1,100 @@
+.containerClass {
+    font-family:@mainfont;
+    color:white;
+    font-size:2em;
+    text-align:center;
+    margin:1em 0em 1em 0em;
+}
+
 .headerClass {
+    background: @primaryred;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-bottom-left-radius:55rem;
+    border-bottom-right-radius:55rem;
+    border-bottom: 2px solid @accentblue;
+
     h1 {
-        border:2px solid yellow;
+        color: @accentyellow2;
+        text-align: center;
+        padding: 2rem 0 1rem 0;
+        font-family: @mainfont;
+        font-size: 4rem;
     }
+}
+
+.testimonialsClass {
+    display:flex;
+    justify-content:reverse;
+    border:1px solid white;
+    width:60em;
+    flex-wrap:wrap;
+    margin:0 auto;
+    margin-bottom:4em;
+}
+
+.boxClass {
+    border:2px solid yellow;
+    width:20em;
+    height:auto;
+    margin:2.5em;
+    background:@primaryred;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-bottom-left-radius:3rem;
+    border-bottom-right-radius:65rem;
+    border-bottom: 2px solid @accentblue;
+    border-top-left-radius:60rem;
+    border-top-right-radius:55rem;
+    border-top: 2px solid @accentblue;
+    margin-left:6em;
+    line-height:20px;
+
+    p {
+        font-family:@secondaryfont;
+        color:white;
+        width:20em;
+        height:auto;
+    }
+
+}
+
+.footer{
+    background: @primaryred;
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+    border-top-left-radius:70rem;
+    border-top-right-radius:70rem;
+    border-top: 2px solid @accentblue;
+}
+.homeLogoFooter {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 50px;
+        height: auto;
+    }
+    a{
+        align-self: center;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    p{
+        color: rgb(78, 78, 78);
+        font-size: 1.5rem;
+        align-self: center;
+        font-weight: bold;
+        font-family: @mainfont;
+    }
+    p:hover{
+        color: @accentblue;
+    }
+
 }
