@@ -139,6 +139,35 @@ table {
   border-bottom-right-radius: 55rem;
   border-bottom: 2px solid #47cbe6;
 }
+.aboutHead .homeLogo {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.aboutHead .homeLogo img {
+  width: 50px;
+  height: auto;
+  text-align: center;
+}
+.aboutHead .homeLogo a {
+  align-self: center;
+  text-decoration: none;
+}
+.aboutHead .homeLogo a:hover {
+  color: white;
+}
+.aboutHead .homeLogo p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.aboutHead .homeLogo p:hover {
+  color: #47cbe6;
+}
 .aboutHead h1 {
   color: #ebbd36;
   text-align: center;
@@ -146,20 +175,130 @@ table {
   font-family: 'Amatic SC', cursive;
   font-size: 4rem;
 }
-.teamMembers {
+.description {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
 }
-.teamMembers .team {
-  background-color: #ebbd36;
-  margin-top: 3rem;
+.description h3 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 2rem;
 }
-.teamMembers .team h2 {
-  font-size: 1.5rem;
-  font-family: 'Amatic SC', cursive;
-  text-align: center;
+.role {
+  display: flex;
+  justify-content: center;
   background: #cf0732;
+  border-radius: 20rem;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: 1px solid #ebbd36;
+}
+.role h2 {
+  font-size: 2.5rem;
+  padding: 1.5rem 0 1.5rem 0;
+  font-family: 'Amatic SC', cursive;
+  color: #edc71c;
+  text-align: center;
+}
+.roleMembers {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.roleMembers .m {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.roleMembers .m .icons {
+  display: flex;
+  background: #47cbe6;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+.roleMembers .m .icons a {
+  justify-content: center;
+}
+.roleMembers .m .icons img {
+  width: 50px;
+  padding: 0.2rem;
+  height: auto;
+  border: 0px;
+}
+.roleMembers img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.roleMembers h4 {
+  font-size: 2.2rem;
+  font-family: 'Amatic SC', cursive;
+  color: #edc71c;
+  margin-top: 0.2rem;
+  text-align: center;
+  border: 1px solid black;
+  background: #cf0732;
+  border-radius: 10px;
+}
+.roleMembers p {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: black;
+  border: 1px solid black;
+  background: #ebbd36;
+}
+.aboutfooter {
+  background: #cf0732;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-top-left-radius: 70rem;
+  border-top-right-radius: 70rem;
+  border-top: 2px solid #47cbe6;
+}
+.homeLogoFooter {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.homeLogoFooter img {
+  width: 50px;
+  height: auto;
+}
+.homeLogoFooter a {
+  align-self: center;
+  text-decoration: none;
+}
+.homeLogoFooter a:hover {
+  color: white;
+}
+.homeLogoFooter p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.homeLogoFooter p:hover {
+  color: #47cbe6;
 }
 footer {
   background-color: #cf0732;
