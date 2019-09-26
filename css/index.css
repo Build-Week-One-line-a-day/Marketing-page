@@ -442,6 +442,97 @@ footer .iconDiv img {
     padding-right: 3rem;
   }
 }
+.containerClass {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin: 1em 0em 1em 0em;
+}
+.headerClass {
+  background: #cf0732;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-bottom-left-radius: 55rem;
+  border-bottom-right-radius: 55rem;
+  border-bottom: 2px solid #47cbe6;
+}
+.headerClass h1 {
+  color: #ebbd36;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+}
+.testimonialsClass {
+  display: flex;
+  justify-content: reverse;
+  border: 1px solid white;
+  width: 60em;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+.boxClass {
+  border: 2px solid yellow;
+  width: 20em;
+  height: auto;
+  margin: 2.5em;
+  background: #cf0732;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 65rem;
+  border-bottom: 2px solid #47cbe6;
+  border-top-left-radius: 60rem;
+  border-top-right-radius: 55rem;
+  border-top: 2px solid #47cbe6;
+  margin-left: 6em;
+  line-height: 20px;
+}
+.boxClass p {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  width: 20em;
+  height: auto;
+}
+.footer {
+  background: #cf0732;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  border-top-left-radius: 70rem;
+  border-top-right-radius: 70rem;
+  border-top: 2px solid #47cbe6;
+}
+.homeLogoFooter {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.homeLogoFooter img {
+  width: 50px;
+  height: auto;
+}
+.homeLogoFooter a {
+  align-self: center;
+  text-decoration: none;
+}
+.homeLogoFooter a:hover {
+  color: white;
+}
+.homeLogoFooter p {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+.homeLogoFooter p:hover {
+  color: #47cbe6;
+}
 html {
   scroll-behavior: smooth;
 }
